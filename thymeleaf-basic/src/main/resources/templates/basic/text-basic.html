@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Spring!</title>
+</head>
+<body>
+  <h1>컨텐츠에 동적으로 데이터 출력하기</h1>
+  <li> 이스케이프 적용
+    <ul>
+    <li>th:text 사용 <span th:text="${data}"></span></li>
+      <li>컨텐츠 안에서 직접 출력하기 = [[${data}]]</li>
+
+  </ul>
+  </li>
+
+  <li> 이스케이프 미적용
+      <ul>
+          <li>th:text 사용 <span th:utext="${data}"></span></li>
+          <li>컨텐츠 안에서 직접 출력하기 = [(${data})]</li>
+
+      </ul>
+  </li>
+</body>
+</html>
